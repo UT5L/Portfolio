@@ -1,0 +1,27 @@
+body {
+  text-align: center;
+  padding: 20px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+*{background-color: azure;}
+h1{color: rgb(109, 48, 165);
+font-family: fantasy ;
+background-color: rgb(189, 162, 162);
+}

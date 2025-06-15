@@ -1,0 +1,12 @@
+img{height: 300px; width:800px}
+*{text-align: center}
+h1{font-family:"Lucida Console"}
+*{font-family:"Papyrus";}
+ul {
+  list-style: disc;
+  list-style-position: outside;
+  text-align: left;
+  margin-left: 2em;
+}
+
+

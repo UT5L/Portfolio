@@ -1,0 +1,10 @@
+*{text-align: center;}
+*{background-color: rgb(255, 240, 220);}
+.headings{font-family:Papyrus}
+p{font-family: Garamond;
+font-size: larger;}
+.dates{font-size: smaller;}
+ul{list-style-position: inside;
+padding-left: 0;
+margin-left: 0;
+font-family: garamond;}
