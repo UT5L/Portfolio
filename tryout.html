@@ -8,7 +8,7 @@
   </head>
 
   <body>
-    <h1>AI future</h1>
+    <h1>AI pictures</h1>
     <div class="gallery">
       <img src="./assets/images/Futuristic city/ai robot.png" alt="Image 1" />
       <img
@@ -30,15 +30,64 @@
       <img src="./assets/images/Futuristic city/ai future.png" alt="Image 3" />
       <!-- Add more images here -->
     </div>
+    <div class="lightbox" id="lightbox">
+  <span class="lightbox-close" aria-label="Close">&times;</span>
+  <img id="lightbox-img" src="" alt="">
+</div>
+<script>
+  // 1) Grab elements
+  const thumbs = document.querySelectorAll('.gallery img');
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const btnClose = document.querySelector('.lightbox-close');
+
+  // 2) Open the lightbox with the clicked image
+  thumbs.forEach(img => {
+    img.addEventListener('click', () => {
+      lightboxImg.src = img.src;      // show same image but big
+      lightbox.style.display = 'flex'; // show popup
+    });
+  });
+
+  // 3) Close on X
+  btnClose.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+    lightboxImg.src = ''; // optional: clear src
+  });
+
+  // 4) Close when clicking the dark background
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+      lightbox.style.display = 'none';
+      lightboxImg.src = '';
+    }
+  });
+
+  // 5) Optional: close with ESC key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      lightbox.style.display = 'none';
+      lightboxImg.src = '';
+    }
+  });
+</script>
     <h2>AI videos</h2>
-    <h2>My Video</h2>
 
 <video width="600" controls>
-  <source src="./assets/images/veo i lost everything robot.mp4" type="video/mp4">
+  <source src="./assets/videos/veo i lost everything robot.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<video width="600" controls>
+  <source src="./assets/videos/Gen-4 Turbo ai future robot funny situation 182679232.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<video width="600" controls>
+  <source src="./assets/videos/veo i lost everything robot.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<video width="600" controls>
+  <source src="./assets/videos/veo i lost everything robot.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
   </body>
 </html>
-
-
-
