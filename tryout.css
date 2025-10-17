@@ -21,7 +21,45 @@ body {
   transform: scale(1.05);
 }
 *{background-color: azure;}
-h1{color: rgb(109, 48, 165);
+h1,h2{color: rgb(109, 48, 165);
 font-family: fantasy ;
 background-color: rgb(189, 162, 162);
+}
+
+
+/* --- Lightbox overlay --- */
+.lightbox {
+  display: none;                 /* hidden by default */
+  position: fixed;
+  inset: 0;                      /* top:0 right:0 bottom:0 left:0 */
+  background: rgba(0,0,0,.9);
+  z-index: 1000;
+  justify-content: center;       /* centers image horizontally */
+  align-items: center;           /* centers image vertically */
+  padding: 40px;
+}
+
+.lightbox img {
+  max-width: 95%;
+  max-height: 85%;
+  border-radius: 12px;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  background: none;        /* removes white background */
+  border: none;            /* ensures no border box */
+  outline: none;           /* removes blue outline when clicked */
+  line-height: 1;          /* keeps spacing tight */
+}
+.lightbox-close:hover {
+  color: #ccc;             /* softer color when hovered */
+  transform: scale(1.1);   /* small hover animation */
 }
