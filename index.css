@@ -1,8 +1,28 @@
-*{font-family: "Georgia";}
-.prog{text-align: center;}
-h1{background-color: rgb(152, 113, 145);}
-*{background-color: rgb(238, 233, 243);}
-a{color: black;}
-a:hover{color: blueviolet;}
-.prog{font-family: papyrus;
-font-weight: bold;}
+* {
+    font-family: "Georgia";
+}
+
+.prog {
+    text-align: center;
+}
+
+h1 {
+    background-color: rgb(213, 92, 191);
+}
+
+* {
+    background-color: rgb(238, 233, 243);
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: blueviolet;
+}
+
+.prog {
+    font-family: papyrus;
+    font-weight: bold;
+}
